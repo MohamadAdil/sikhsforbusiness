@@ -1,11 +1,74 @@
-@media (max-width: 1399px) {}
+@media (max-width: 1399px) {
+  .site-header .navbar-brand img {
+    max-width: 280px;
+  }
+
+  .site-header .navbar-nav {
+    gap: 30px;
+  }
+
+}
 
 @media (max-width: 1299px) {}
 
-@media (max-width: 1199px) {}
+@media (max-width: 1199px) {
+  .btn-desk {
+    display: none;
+  }
 
-@media (max-width: 991px) {}
+  .btn-mobi {
+    display: block;
+  }
+}
 
-@media (max-width: 767px) {}
+@media (max-width: 991px) {
+  .site-header .navbar {
+    padding: 10px 0 !important;
+  }
 
-@media (max-width: 575px) {}
+  .hero-section .text-wrap h1 ,.sc-testimonial h2,.sc-faq .faq-wrap h2{
+    font-size: 50px;
+    line-height: 1.2;
+  }
+
+  .hero-section .text-wrap p {
+    font-size: 18px;
+  }
+
+  .hero-section {
+    min-height: 500px;
+  }
+
+  .sc-whatis {
+    padding: 150px 0 50px;
+    position: relative;
+  }
+
+  .sc-whatis {
+    padding: 50px 0 50px;
+    position: relative;
+  }
+  .upper-wrap-cn,.upper-wrap-btn{
+    width: 100%;
+    text-align: start;
+  }
+  .whatis-sc-clip{
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .site-header .navbar-brand img {
+    max-width: 200px;
+  }
+  .hero-section .text-wrap h1 ,.sc-testimonial h2,.sc-faq .faq-wrap h2{
+    font-size: 30px;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 575px) {
+  .site-header .navbar-brand img {
+    max-width: 160px;
+  }
+}
