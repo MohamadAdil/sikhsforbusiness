@@ -1017,3 +1017,112 @@ img {
 section .row>div {
   margin-bottom: 20px;
 }
+
+/*  */
+.sc-dash-banner {
+  padding: 100px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.sc-dash-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: #406B37CC;
+}
+
+.sc-dash-banner .text-wrap {
+  position: relative;
+  z-index: 1;
+}
+
+.sc-dash-banner h1 {
+  font: 700 50px/1.2 var(--font-jost);
+  color: var(--white);
+  text-align: center;
+}
+
+/*  */
+.sc-form {
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 700px;
+}
+
+.sc-form .form-wrap {
+  max-width: 621px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  background: var(--white);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.sc-form .form-wrap h4 {
+  font: 400 24px/1.2 var(--font-jost);
+  color: var(--black);
+  margin: 0 0 10px;
+}
+
+.sc-form .form-wrap input,
+.sc-form .form-wrap select,
+.sc-form .form-wrap textarea {
+  border: 1px solid var(--secondary-clr);
+  padding: 15px;
+  border-radius: 10px;
+  margin: 0 0 10px;
+}
+
+.sc-form .form-wrap select,
+.sc-form .form-wrap textarea {
+  margin: 0;
+}
+
+.sc-form .form-wrap .btn-main {
+  width: 100%;
+  padding: 20px;
+  margin: 0 0 10px;
+  text-decoration: none !important;
+  color: var(--white) !important;
+  text-align: center;
+}
+
+.sc-form .form-wrap p,
+.sc-form .form-wrap a {
+  font: 400 18px/normal var(--font-jost);
+  letter-spacing: 0;
+}
+
+.sc-form .form-wrap p {
+  color: var(--black);
+  margin-bottom: 10px;
+}
+
+.sc-form .form-wrap a {
+  color: var(--secondary-clr);
+  text-decoration: underline;
+}
+
+.sc-form .create-ac h4 {
+  border-top: 1px solid #999999;
+  padding-top: 20px;
+  margin: 20px 0 10px;
+}
+/*  */
+.sc-form {
+  display: none;
+}
+
+.sc-form.active {
+  display: flex;
+}
