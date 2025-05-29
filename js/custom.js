@@ -4,11 +4,11 @@ $(document).ready(function () {
     spaceBetween: 20,
     loop: true,
     centeredSlides: true,
-    grabCursor: true,
+    grabCursor: false,
     speed: 800,
     autoplay: {
       delay: 5000,
-      disableOnInteraction: true,
+      disableOnInteraction: false,
     },
     navigation: {
       nextEl: '.swiper-button-next',
@@ -24,7 +24,7 @@ $(document).ready(function () {
         spaceBetween: 15,
       },
       1024: {
-        slidesPerView: 2,
+        slidesPerView: 3,
         spaceBetween: 20,
       },
     },
