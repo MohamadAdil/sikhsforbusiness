@@ -123,6 +123,9 @@
   .eventcard-cn {
     gap: 20px;
   }
+  .sc-whatis::before{
+    display: none;
+  }
 }
 
 @media (max-width: 575px) {
