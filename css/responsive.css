@@ -53,7 +53,8 @@
     display: none;
   }
 
-  h2 {
+  h2,
+  .sc-dash-banner h1 {
     font-size: 30px !important;
     margin-bottom: 10px !important;
   }
@@ -123,7 +124,8 @@
   .eventcard-cn {
     gap: 20px;
   }
-  .sc-whatis::before{
+
+  .sc-whatis::before {
     display: none;
   }
 }
