@@ -872,7 +872,7 @@ img {
 
 
 .cstm-acc .accordion-item h2 {
-  margin: 0;
+  margin: 0 !important;
 }
 
 .cstm-acc .accordion-item button {
@@ -923,7 +923,7 @@ img {
   display: flex;
   align-items: center;
   margin-bottom: 32px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   gap: 20px;
 }
 
@@ -1013,6 +1013,7 @@ img {
   margin: 0;
   font-size: 18px;
 }
-section .row > div{
+
+section .row>div {
   margin-bottom: 20px;
 }
