@@ -6,10 +6,7 @@
   .site-header .navbar-nav {
     gap: 30px;
   }
-
 }
-
-@media (max-width: 1299px) {}
 
 @media (max-width: 1199px) {
   .btn-desk {
@@ -26,34 +23,51 @@
     padding: 10px 0 !important;
   }
 
-  .hero-section .text-wrap h1 ,.sc-testimonial h2,.sc-faq .faq-wrap h2{
+  .hero-section .text-wrap h1 {
     font-size: 50px;
     line-height: 1.2;
-  }
-
-  .hero-section .text-wrap p {
-    font-size: 18px;
   }
 
   .hero-section {
     min-height: 500px;
   }
 
-  .sc-whatis {
-    padding: 150px 0 50px;
-    position: relative;
+  .sc-sponser,
+  .sc-joinius,
+  .sc-whatis,
+  .sc-corevalue,
+  .sc-ourmenbers,
+  .sc-events,
+  .sc-testimonial,
+  .sc-faq {
+    padding: 50px 0;
   }
 
-  .sc-whatis {
-    padding: 50px 0 50px;
-    position: relative;
-  }
-  .upper-wrap-cn,.upper-wrap-btn{
+  .upper-wrap-cn,
+  .upper-wrap-btn {
     width: 100%;
     text-align: start;
   }
-  .whatis-sc-clip{
+
+  .whatis-sc-clip {
     display: none;
+  }
+
+  h2 {
+    font-size: 30px !important;
+    margin-bottom: 10px !important;
+  }
+
+  p {
+    font-size: 16px !important;
+  }
+
+  h4 {
+    font-size: 20px !important;
+  }
+
+  .eventcard-cn p {
+    font-size: 18px !important;
   }
 }
 
@@ -61,14 +75,71 @@
   .site-header .navbar-brand img {
     max-width: 200px;
   }
-  .hero-section .text-wrap h1 ,.sc-testimonial h2,.sc-faq .faq-wrap h2{
+
+  .hero-section .text-wrap h1 {
     font-size: 30px;
     line-height: 1.2;
+  }
+
+  .sc-faq .faq-wrap span,
+  .sc-testimonial span,
+  .sc-events span,
+  .sc-ourmenbers span,
+  .sc-whatis-txt span,
+  .sc-joinius span {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .eventcard-cn span {
+    font-size: 18px;
+  }
+
+  .forums-card-text {
+    padding: 15px;
+  }
+
+  .menberform select,
+  .menberform .btn-main {
+    min-height: auto;
+  }
+
+  .menberform select,
+  .menberform .btn-main {
+    padding: 15px 20px;
+  }
+
+  .sc-events .nav-tabs {
+    overflow: auto;
+    flex-wrap: unset;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+
+  .sc-events .nav-tabs button {
+    white-space: nowrap;
+  }
+
+  .eventcard-cn {
+    gap: 20px;
   }
 }
 
 @media (max-width: 575px) {
   .site-header .navbar-brand img {
     max-width: 160px;
+  }
+
+  h2 {
+    font-size: 24px !important;
+  }
+
+  .join-card-img img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .join-card-text h4 {
+    font-size: 18px !important;
   }
 }

@@ -8,7 +8,7 @@ $(document).ready(function () {
     speed: 800,
     autoplay: {
       delay: 5000,
-      disableOnInteraction: false,
+      disableOnInteraction: true,
     },
     navigation: {
       nextEl: '.swiper-button-next',
