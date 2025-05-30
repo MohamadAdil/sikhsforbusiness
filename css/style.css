@@ -1218,3 +1218,8 @@ section .row>div {
 .sidebar-ul li a i {
   margin-right: 6px;
 }
+
+/* .sidebar-toggle {
+  display: none;
+  width: auto;
+} */

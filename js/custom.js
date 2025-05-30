@@ -1,4 +1,6 @@
 $(document).ready(function () {
+
+  // ==================== Swiper Slider Initialization ====================
   const swiper = new Swiper('.testimonial-slider', {
     slidesPerView: 2,
     spaceBetween: 20,
@@ -29,18 +31,17 @@ $(document).ready(function () {
       },
     },
   });
-});
-$(document).ready(function () {
-  // Show only first form initially
+
+  // ==================== Multi-Step Form Handling ====================
+
+  // Show only the first form initially
   $('.sc-form').removeClass('active');
   $('.sc-form').first().addClass('active');
 
-  // Sample registered emails
-  const registeredEmails = [
-    "admin@gmail.com"
-  ];
+  // Dummy list of registered emails
+  const registeredEmails = ["admin@gmail.com"];
 
-  // When first form is submitted
+  // Handle first form submission (email verification)
   $('.sc-form').first().find('form').on('submit', function (e) {
     e.preventDefault();
 
@@ -52,33 +53,32 @@ $(document).ready(function () {
     }
 
     if (registeredEmails.includes(emailInput)) {
-      // Show Login form with email filled and change link visible
+      // If email is registered, show login form
       showLoginForm(emailInput);
     } else {
-      // Show new user form with email filled and option to create account
+      // If email is not registered, show new user form
       showNewUserForm(emailInput);
     }
   });
 
-  // Handle "Change" email click - goes back to first form
+  // Handle "Change Email" link click - return to first form
   $(document).on('click', '.sc-form a.change-email', function (e) {
     e.preventDefault();
     $('.sc-form').removeClass('active');
     $('.sc-form').first().addClass('active');
   });
 
-  // Handle "Let’s create an account using your mobile number" click
+  // Handle "Create Account" link click - show create account form
   $(document).on('click', '.sc-form .create-account-link', function (e) {
     e.preventDefault();
     $('.sc-form').removeClass('active');
     $('.sc-form.create-account').addClass('active');
   });
 
-  // Helper functions
+  // === Helper Functions for Form Flow ===
+
   function showLoginForm(email) {
     $('.sc-form').removeClass('active');
-
-    // Update login form email text and add change link if not present
     const loginForm = $('.sc-form.login');
     loginForm.find('p.email-text').html(`${email} <a href="#" class="change-email">Change</a>`);
     loginForm.addClass('active');
@@ -86,9 +86,21 @@ $(document).ready(function () {
 
   function showNewUserForm(email) {
     $('.sc-form').removeClass('active');
-
     const newUserForm = $('.sc-form.new-user');
     newUserForm.find('p.email-text').html(`${email} <a href="#" class="change-email">Change</a>`);
     newUserForm.addClass('active');
   }
+
+  // ==================== Mobile Sidebar Toggle ====================
+
+  const toggleBtn = document.querySelector('.sidebar-toggle');
+  const sidebar = document.querySelector('.sidebar');
+
+  // Toggle sidebar visibility on mobile
+  if (toggleBtn && sidebar) {
+    toggleBtn.addEventListener('click', function () {
+      sidebar.classList.toggle('open');
+    });
+  }
+
 });
