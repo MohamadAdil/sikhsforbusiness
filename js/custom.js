@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
 
   // ==================== Swiper Slider Initialization ====================
@@ -42,24 +43,24 @@ $(document).ready(function () {
   const registeredEmails = ["admin@gmail.com"];
 
   // Handle first form submission (email verification)
-  $('.sc-form').first().find('form').on('submit', function (e) {
-    e.preventDefault();
+  // $('.sc-form').first().find('form').on('submit', function (e) {
+  //   e.preventDefault();
 
-    const emailInput = $(this).find('input[type="email"]').val().trim().toLowerCase();
+  //   const emailInput = $(this).find('input[type="email"]').val().trim().toLowerCase();
 
-    if (!emailInput) {
-      alert("Please enter your email.");
-      return;
-    }
+  //   if (!emailInput) {
+  //     alert("Please enter your email.");
+  //     return;
+  //   }
 
-    if (registeredEmails.includes(emailInput)) {
-      // If email is registered, show login form
-      showLoginForm(emailInput);
-    } else {
-      // If email is not registered, show new user form
-      showNewUserForm(emailInput);
-    }
-  });
+  //   if (registeredEmails.includes(emailInput)) {
+  //     // If email is registered, show login form
+  //     showLoginForm(emailInput);
+  //   } else {
+  //     // If email is not registered, show new user form
+  //     showNewUserForm(emailInput);
+  //   }
+  // });
 
   // Handle "Change Email" link click - return to first form
   $(document).on('click', '.sc-form a.change-email', function (e) {
@@ -103,4 +104,37 @@ $(document).ready(function () {
     });
   }
 
+  // Slect 2
+  $('.select2').select2();
+
+  // 
+  flatpickr("#datePicker", {
+    mode: "range",
+    dateFormat: "Y-m-d",
+    appendTo: document.querySelector(".date-picker"),
+    onChange: function (selectedDates, dateStr, instance) {
+      if (dateStr) {
+        document.querySelector("label[for='datePicker']").classList.add("active");
+      }
+    }
+  });
+
+  // Optional: open picker on label click
+  document.querySelector("label[for='datePicker']").addEventListener("click", function () {
+    document.getElementById("datePicker")._flatpickr.open();
+  });
+// 
+const openBtn = document.getElementById("openFilterBtn");
+  const closeBtn = document.getElementById("closeFilterBtn");
+  const filterPanel = document.getElementById("mobileFilterPanel");
+
+  openBtn.addEventListener("click", () => {
+    filterPanel.classList.remove("d-none");
+  });
+
+  closeBtn.addEventListener("click", () => {
+    filterPanel.classList.add("d-none");
+  });
+
 });
+AOS.init();

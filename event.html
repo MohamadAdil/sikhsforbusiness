@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Essential Meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Sikhs For Business - Connecting Sikh entrepreneurs and professionals worldwide. Join us for networking, resources, and business growth.">
+  <meta name="keywords" content="Sikhs For Business, Sikh Entrepreneurs, Business Networking, Sikh Professionals">
+  <meta name="author" content="Sikhs For Business">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph for Social Sharing -->
+  <meta property="og:title" content="Sikhs For Business - Home">
+  <meta property="og:description"
+    content="Join Sikhs For Business to connect, collaborate, and grow with Sikh entrepreneurs globally.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/path/to/og-image.jpg"> <!-- Replace with real URL -->
+  <meta property="og:url" content="https://example.com"> <!-- Replace with your URL -->
+
+  <!-- Title -->
+  <title>Sikhs For Business - Home</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="/images/favicon.svg" type="image/x-icon">
+
+  <!-- Preload Fonts for Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+  <!-- Google Fonts -->
+  <link href="./css/font.css" rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <nav class="navbar navbar-expand-xl" aria-label="Fifth navbar example">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">
+          <img src="./images/logo.svg"
+            alt="Logo for Sikhs For Business with the tagline Give more, grow more, featuring stylized initials SB and a central Khanda symbol.">
+        </a>
+        <div class="d-flex align-items-center gap-3">
+          <div class="btn-mobi">
+            <a class="btn-main" href="./login.html"><i class="fa-solid fa-user"></i></a>
+          </div>
+        <button class="navbar-toggler" type="a" data-bs-toggle="collapse" data-bs-target="#navbarsExample05"
+            aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarsExample05">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"> <a class="nav-link active" aria-current="page" href="#">Home</a> </li>
+
+            <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                aria-expanded="false">Events <i class="fa fa-chevron-down ms-1"></i></a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Events 1</a></li>
+                <li><a class="dropdown-item" href="#">Events 2</a></li>
+                <li><a class="dropdown-item" href="#">Events 3</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"> <a class="nav-link" href="#">Directory</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="#">Why Join</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="#">Contact Us</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="#">Blogs</a> </li>
+          </ul>
+          <div class="btn-desk">
+            <a class="btn-main" href="./login.html"><i class="fa-solid fa-user"></i> Login or register</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+ <section class="inner-banner" style="background-image: url(https://s4b.theprosociety.org/frontend/images/hero-bg.png);">
+  <div class="container">
+    <div class="text-wrap">
+      <h1>Sikhs for Business Events</h1>
+    </div>
+  </div>
+</section>
+<!--  -->
+<section class="event-sc">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="filter-wrap">
+          <h4 class="d-none d-md-block">Filters</h4>
+          <div class="tab-acc-filter d-none d-md-block" id="mobileFilterPanel">
+            <button class="btn btn-link text-dark position-absolute top-0 start-0 d-block d-md-none" id="closeFilterBtn">
+              <i class="fa fa-times fa-lg"></i>
+            </button>
+            <ul class="nav nav-tabs d-md-none" id="mobileTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="date-tab" data-bs-toggle="tab" data-bs-target="#date" type="button"
+                  role="tab">Date</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="type-tab" data-bs-toggle="tab" data-bs-target="#type" type="button"
+                  role="tab">Type</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="location-tab" data-bs-toggle="tab" data-bs-target="#location" type="button"
+                  role="tab">Location</button>
+              </li>
+            </ul>
+
+            <div class="tab-content d-md-none" id="mobileTabContent">
+              <!-- Date Tab -->
+              <div class="tab-pane fade show active" id="date" role="tabpanel">
+                <div class="accordion-body">
+                  <div class="check-wrap">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="checkTodayMobile" hidden>
+                      <label class="form-check-label" for="checkTodayMobile">Today</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="checkTomorrowMobile" hidden>
+                      <label class="form-check-label" for="checkTomorrowMobile">Tomorrow</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="checkWeekendMobile" hidden>
+                      <label class="form-check-label" for="checkWeekendMobile">This Weekend</label>
+                    </div>
+                    <div class="date-picker mt-2">
+                      <div class="form-check">
+                        <input type="text" id="datePickerMobile" class="date-input form-control">
+                        <label for="datePickerMobile" class="form-label"><i class="fa-solid fa-calendar-days me-2"></i>
+                          Date</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Type Tab -->
+              <div class="tab-pane fade" id="type" role="tabpanel">
+                <div class="accordion-body">
+                  <div class="check-wrap">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="checkOpenForumMobile" hidden>
+                      <label class="form-check-label" for="checkOpenForumMobile">Open Forum</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="checkCloseForumMobile" hidden>
+                      <label class="form-check-label" for="checkCloseForumMobile">Close Forum</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Location Tab -->
+              <div class="tab-pane fade" id="location" role="tabpanel">
+                <div class="accordion-body">
+                  <div class="mb-3">
+                    <select class="select2 form-select" multiple="multiple">
+                      <option value="all">Select Location</option>
+                      <option value="chandigarh">Chandigarh</option>
+                      <option value="delhi">Delhi</option>
+                      <option value="mumbai">Mumbai</option>
+                      <option value="bangalore">Bangalore</option>
+                      <option value="hyderabad">Hyderabad</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Desktop Accordion -->
+            <div class="accordion d-none d-md-block" id="accordionExample">
+              <!-- Date Accordion -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    <div><span>Date</span> <a href="javascript:void(0)" class="ms-3">clear</a></div>
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div class="check-wrap">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="checkToday" hidden>
+                        <label class="form-check-label" for="checkToday">Today</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="checkTomorrow" hidden>
+                        <label class="form-check-label" for="checkTomorrow">Tomorrow</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="checkWeekend" hidden>
+                        <label class="form-check-label" for="checkWeekend">This Weekend</label>
+                      </div>
+                      <div class="date-picker mt-2">
+                        <div class="form-check">
+                          <input type="text" id="datePicker" class="date-input form-control">
+                          <label for="datePicker" class="form-label"><i class="fa-solid fa-calendar-days me-2"></i>
+                            Date</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Type Accordion -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <div><span>Type</span> <a href="javascript:void(0)" class="ms-3">clear</a></div>
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div class="check-wrap">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="checkOpenForum" hidden>
+                        <label class="form-check-label" for="checkOpenForum">Open Forum</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="checkCloseForum" hidden>
+                        <label class="form-check-label" for="checkCloseForum">Close Forum</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Location Accordion -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <div><span>Location</span> <a href="javascript:void(0)" class="ms-3">clear</a></div>
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div class="mb-3">
+                      <select class="select2 form-select" multiple="multiple">
+                        <option value="all">Select Location</option>
+                        <option value="chandigarh">Chandigarh</option>
+                        <option value="delhi">Delhi</option>
+                        <option value="mumbai">Mumbai</option>
+                        <option value="bangalore">Bangalore</option>
+                        <option value="hyderabad">Hyderabad</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="filter-card-wrap">
+          <button class="filter-badge d-md-none" id="openFilterBtn">Filter</button>
+          <h4>Events </h4>
+          <div class="row">
+            <!--  -->
+            <div class="col-lg-4 col-sm-6 mb-3">
+              <div class="fliter-card">
+                <a href="#">
+                  <div class="filter-card-img">
+                    <img src="https://s4b.theprosociety.org/frontend/images/forums-img.png" alt="f">
+                    <span class="filter-badge">New</span>
+                  </div>
+                  <div class="filter-card-cn">
+                    <span>sun, 29 June</span>
+                    <h4>Who Are You by Rahul Subramanian</h4>
+                    <p>Punjab Arts Council: Chandigarh</p>
+                    <h6><i class="fa-solid fa-location-dot me-2"></i>#241 Chandigarh India</h6>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!--  -->
+            <div class="col-lg-4 col-sm-6 mb-3">
+              <div class="fliter-card">
+                <a href="#">
+                  <div class="filter-card-img">
+                    <img src="https://s4b.theprosociety.org/frontend/images/forums-img.png" alt="f">
+                    <span class="filter-badge">New</span>
+                  </div>
+                  <div class="filter-card-cn">
+                    <span>sun, 29 June</span>
+                    <h4>Who Are You by Rahul Subramanian</h4>
+                    <p>Punjab Arts Council: Chandigarh</p>
+                    <h6><i class="fa-solid fa-location-dot me-2"></i>#241 Chandigarh India</h6>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!--  -->
+            <div class="col-lg-4 col-sm-6 mb-3">
+              <div class="fliter-card">
+                <a href="#">
+                  <div class="filter-card-img">
+                    <img src="https://s4b.theprosociety.org/frontend/images/forums-img.png" alt="f">
+                    <span class="filter-badge">New</span>
+                  </div>
+                  <div class="filter-card-cn">
+                    <span>sun, 29 June</span>
+                    <h4>Who Are You by Rahul Subramanian</h4>
+                    <p>Punjab Arts Council: Chandigarh</p>
+                    <h6><i class="fa-solid fa-location-dot me-2"></i>#241 Chandigarh India</h6>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!--  -->
+            <div class="col-lg-4 col-sm-6 mb-3">
+              <div class="fliter-card">
+                <a href="#">
+                  <div class="filter-card-img">
+                    <img src="https://s4b.theprosociety.org/frontend/images/forums-img.png" alt="f">
+                    <span class="filter-badge">New</span>
+                  </div>
+                  <div class="filter-card-cn">
+                    <span>sun, 29 June</span>
+                    <h4>Who Are You by Rahul Subramanian</h4>
+                    <p>Punjab Arts Council: Chandigarh</p>
+                    <h6><i class="fa-solid fa-location-dot me-2"></i>#241 Chandigarh India</h6>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!--  -->
+            <div class="col-lg-4 col-sm-6 mb-3">
+              <div class="fliter-card">
+                <a href="#">
+                  <div class="filter-card-img">
+                    <img src="https://s4b.theprosociety.org/frontend/images/forums-img.png" alt="f">
+                    <span class="filter-badge">New</span>
+                  </div>
+                  <div class="filter-card-cn">
+                    <span>sun, 29 June</span>
+                    <h4>Who Are You by Rahul Subramanian</h4>
+                    <p>Punjab Arts Council: Chandigarh</p>
+                    <h6><i class="fa-solid fa-location-dot me-2"></i>#241 Chandigarh India</h6>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!--  -->
+            <div class="col-lg-4 col-sm-6 mb-3">
+              <div class="fliter-card">
+                <a href="#">
+                  <div class="filter-card-img">
+                    <img src="https://s4b.theprosociety.org/frontend/images/forums-img.png" alt="f">
+                    <span class="filter-badge">New</span>
+                  </div>
+                  <div class="filter-card-cn">
+                    <span>sun, 29 June</span>
+                    <h4>Who Are You by Rahul Subramanian</h4>
+                    <p>Punjab Arts Council: Chandigarh</p>
+                    <h6><i class="fa-solid fa-location-dot me-2"></i>#241 Chandigarh India</h6>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <!--  -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="upper-wrap">
+        <div class="upper-wrap-cn">
+          <h2>COntact Us</h2>
+          <p>Have questions? Want to collaborate or share your business story? Get in Touch with our team today.</p>
+        </div>
+        <div class="upper-wrap-btn">
+          <a class="btn-main" href="#">Get in touch</a>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-wrap">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="first-col">
+              <img src="./images/logo.svg" alt="Logo">
+              <p>Sikhs for Business is dedicated to empowering micro and small entrepreneurs within the Sikh community.
+              </p>
+              <ul class="socail-icon">
+                <li>
+                  <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-x-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://plus.google.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-google-plus-g"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="second-col">
+              <h5>Quick Links</h5>
+              <ul class="ft-list">
+                <li>
+                  <a href="">About</a>
+                </li>
+                <li>
+                  <a href="">Events</a>
+                </li>
+                <li>
+                  <a href="">Directory</a>
+                </li>
+                <li>
+                  <a href="">Why Join</a>
+                </li>
+                <li>
+                  <a href="">Blogs</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="third-col">
+              <h5>Quick Links</h5>
+              <ul class="ft-list">
+                <li>
+                  <a href="">About</a>
+                </li>
+                <li>
+                  <a href="">Events</a>
+                </li>
+                <li>
+                  <a href="">Directory</a>
+                </li>
+                <li>
+                  <a href="">Why Join</a>
+                </li>
+                <li>
+                  <a href="">Blogs</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- JavaScript at End for Faster Load -->
+  <script src="./js/jquery-3.7.1.min.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/swiper-bundle.min.js"></script>
+  <script src="./js/custom.js"></script>
+</body>
+
+</html>
